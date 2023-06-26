@@ -26,18 +26,18 @@ public class MathUtilityAdvancedTest {
                                {1,1},
                                {2,2},
                                {4,24},
-                               {5,120}};
+                               {5,1200}};
         return testData;
     }
     
     //nhồi data vào này vào hàm assertE()
     @ParameterizedTest
     @MethodSource("initTestData")
+                                                            // cột 0, cột 1
     public void testFactorialGivenRightArgumentReturnWell(int n, long expected) {
 
         assertEquals(expected, getFactorial(n));
         
-
     }
     
     //TDD: Test Driven Development là kĩ thuật lập trình mà 
